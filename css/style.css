@@ -9,14 +9,14 @@
     --bg-secondary: #121215;
     --bg-accent: #18181C;
     --glass-bg: rgba(20, 20, 24, 0.75);
-    --glass-border: rgba(212, 175, 55, 0.12);
-    --glass-border-hover: rgba(212, 175, 55, 0.28);
+    --glass-border: rgba(0, 240, 255, 0.12);
+    --glass-border-hover: rgba(0, 240, 255, 0.28);
     
-    --gold-primary: #D4AF37;
-    --gold-light: #F9E59A;
-    --gold-dark: #AA771C;
-    --gold-gradient: linear-gradient(135deg, #AA771C 0%, #F9E59A 50%, #D4AF37 100%);
-    --gold-glow: 0 0 20px rgba(212, 175, 55, 0.25);
+    --gold-primary: #00f0ff;
+    --gold-light: #94f5ff;
+    --gold-dark: #0066ff;
+    --gold-gradient: linear-gradient(135deg, #0066ff 0%, #94f5ff 50%, #00f0ff 100%);
+    --gold-glow: 0 0 20px rgba(0, 240, 255, 0.25);
     
     --text-primary: #FFFFFF;
     --text-secondary: #A0A0AA;
@@ -175,8 +175,8 @@ p {
     display: inline-flex;
     padding: 0.4rem 1.2rem;
     border-radius: 50px;
-    background: rgba(212, 175, 55, 0.08);
-    border: 1px solid rgba(212, 175, 55, 0.25);
+    background: rgba(0, 240, 255, 0.08);
+    border: 1px solid rgba(0, 240, 255, 0.25);
     font-size: 0.85rem;
     font-weight: 500;
     color: var(--gold-primary);
@@ -211,7 +211,7 @@ p {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.45);
+    box-shadow: 0 8px 30px rgba(0, 240, 255, 0.45);
 }
 
 .btn-secondary {
@@ -243,7 +243,7 @@ p {
 
 .luxury-card:hover {
     border-color: var(--glass-border-hover);
-    box-shadow: 0 25px 50px rgba(212, 175, 55, 0.06);
+    box-shadow: 0 25px 50px rgba(0, 240, 255, 0.06);
 }
 
 /* Floating Navigation Header */
@@ -317,8 +317,8 @@ p {
 }
 
 .nav-links .nav-cta {
-    background: rgba(212, 175, 55, 0.08);
-    border: 1px solid rgba(212, 175, 55, 0.3);
+    background: rgba(0, 240, 255, 0.08);
+    border: 1px solid rgba(0, 240, 255, 0.3);
     padding: 0.5rem 1.2rem;
     border-radius: 5px;
     color: var(--gold-primary);
@@ -395,7 +395,7 @@ p {
 
 .gold-icon {
     color: var(--gold-primary);
-    filter: drop-shadow(0 0 4px rgba(212, 175, 55, 0.3));
+    filter: drop-shadow(0 0 4px rgba(0, 240, 255, 0.3));
 }
 
 .hero-visual {
@@ -411,7 +411,7 @@ p {
     width: 100%;
     max-width: 480px;
     overflow: hidden;
-    border-color: rgba(212, 175, 55, 0.18);
+    border-color: rgba(0, 240, 255, 0.18);
 }
 
 .hero-image {
@@ -429,7 +429,7 @@ p {
     width: 200px;
     height: 200px;
     transform: translate(-50%, -50%);
-    border: 1px solid rgba(212, 175, 55, 0.15);
+    border: 1px solid rgba(0, 240, 255, 0.15);
     border-radius: 50%;
     animation: ringPulse 6s infinite linear;
     pointer-events: none;
@@ -498,8 +498,8 @@ p {
 }
 
 .stat-card:hover {
-    border-color: rgba(212, 175, 55, 0.15);
-    background: rgba(212, 175, 55, 0.02);
+    border-color: rgba(0, 240, 255, 0.15);
+    background: rgba(0, 240, 255, 0.02);
     transform: translateY(-5px);
 }
 
@@ -532,14 +532,14 @@ p {
     width: 50px;
     height: 50px;
     border-radius: 8px;
-    background: rgba(212, 175, 55, 0.08);
-    border: 1px solid rgba(212, 175, 55, 0.2);
+    background: rgba(0, 240, 255, 0.08);
+    border: 1px solid rgba(0, 240, 255, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--gold-primary);
     margin-bottom: 1.5rem;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 240, 255, 0.05);
 }
 
 .feature-card h3 {
@@ -604,15 +604,15 @@ p {
 }
 
 .sim-btn.active {
-    background: rgba(212, 175, 55, 0.08);
+    background: rgba(0, 240, 255, 0.08);
     border-color: var(--gold-primary);
     color: var(--gold-light);
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.08);
+    box-shadow: 0 4px 15px rgba(0, 240, 255, 0.08);
 }
 
 .sim-btn.active svg {
     color: var(--gold-primary);
-    filter: drop-shadow(0 0 3px rgba(212, 175, 55, 0.4));
+    filter: drop-shadow(0 0 3px rgba(0, 240, 255, 0.4));
 }
 
 .chat-device {
@@ -716,8 +716,8 @@ p {
 }
 
 .chat-msg.system-event {
-    background: rgba(212, 175, 55, 0.05);
-    border: 1px dashed rgba(212, 175, 55, 0.2);
+    background: rgba(0, 240, 255, 0.05);
+    border: 1px dashed rgba(0, 240, 255, 0.2);
     align-self: center;
     color: var(--gold-light);
     max-width: 90%;
@@ -750,7 +750,7 @@ p {
 
 .chat-opt-btn:hover {
     border-color: var(--gold-primary);
-    background: rgba(212, 175, 55, 0.08);
+    background: rgba(0, 240, 255, 0.08);
 }
 
 /* Calculator Grid */
@@ -824,7 +824,7 @@ input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -7px;
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
     transition: transform 0.1s ease;
 }
 
@@ -835,7 +835,7 @@ input[type=range]::-webkit-slider-thumb:hover {
 /* Result Card */
 .calculator-result-card {
     padding: 3rem 2.5rem;
-    border-color: rgba(212, 175, 55, 0.15);
+    border-color: rgba(0, 240, 255, 0.15);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
     position: relative;
     overflow: hidden;
@@ -974,7 +974,7 @@ input[type=range]::-webkit-slider-thumb:hover {
 
 /* Founder Section Styling */
 .founder-card {
-    border-color: rgba(212, 175, 55, 0.15);
+    border-color: rgba(0, 240, 255, 0.15);
     background: linear-gradient(135deg, rgba(20, 20, 24, 0.9) 0%, rgba(30, 30, 36, 0.7) 100%);
     overflow: hidden;
 }
@@ -1063,7 +1063,7 @@ input[type=range]::-webkit-slider-thumb:hover {
 .pricing-card.popular {
     border-color: var(--gold-primary);
     transform: translateY(-8px);
-    box-shadow: 0 20px 50px rgba(212, 175, 55, 0.08);
+    box-shadow: 0 20px 50px rgba(0, 240, 255, 0.08);
 }
 
 .popular-tag {
@@ -1142,7 +1142,7 @@ input[type=range]::-webkit-slider-thumb:hover {
 /* Contact Section & Form Customization */
 .contact-card {
     padding: 4rem 3.5rem;
-    border-color: rgba(212, 175, 55, 0.15);
+    border-color: rgba(0, 240, 255, 0.15);
 }
 
 .form-grid {
@@ -1191,7 +1191,7 @@ input[type=range]::-webkit-slider-thumb:hover {
 .form-group select:focus,
 .form-group textarea:focus {
     border-color: var(--gold-primary);
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.15);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.15);
     background: rgba(255, 255, 255, 0.04);
 }
 
