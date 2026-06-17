@@ -469,11 +469,29 @@ document.addEventListener('DOMContentLoaded', () => {
             formSubmitBtn.disabled = true;
             const btnText = formSubmitBtn.querySelector('span');
             const originalText = btnText.textContent;
-            btnText.textContent = "Processing details...";
+            btnText.textContent = "Sending request...";
             formSubmitBtn.style.opacity = '0.7';
             
-            // Simulating API backend dispatch to Shittij
-            setTimeout(() => {
+            // Dispatch AJAX request to FormSubmit.co
+            fetch("https://formsubmit.co/ajax/fixupboost@gmail.com", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify({
+                    name: document.getElementById('form-name').value,
+                    business: document.getElementById('form-business').value,
+                    email: document.getElementById('form-email').value,
+                    phone: document.getElementById('form-phone').value,
+                    date: document.getElementById('form-date').value,
+                    "time-slot": document.getElementById('form-time-slot').value,
+                    industry: document.getElementById('form-industry').value,
+                    message: document.getElementById('form-message').value
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
                 // Fade out form and fade in success container
                 consultationForm.style.transition = 'opacity 0.4s ease';
                 consultationForm.style.opacity = '0';
@@ -486,8 +504,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         formSuccessContainer.style.opacity = '1';
                     }, 50);
                 }, 400);
-
-            }, 1800); // 1.8s mock networking delay
+            })
+            .catch(err => {
+                console.error("Form submit error:", err);
+                btnText.textContent = "Error submitting. Retry?";
+                formSubmitBtn.disabled = false;
+                formSubmitBtn.style.opacity = '1';
+            });
         });
     }
 
